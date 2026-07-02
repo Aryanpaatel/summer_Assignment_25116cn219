@@ -1,1 +1,11 @@
-
+#include <stdio.h>
+int main() {
+int x, n, i;
+long result = 1;
+scanf("%d %d", &x, &n);
+for(i = 0; i < n; i++) {
+result = result * x;
+}
+printf("%d^%d = %ld", x, n, result);
+return 0;
+}
