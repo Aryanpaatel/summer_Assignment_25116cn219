@@ -1,1 +1,18 @@
-
+#include <stdio.h>
+int main() {
+int num;
+int bin[32];   
+int i = 0;
+printf("Enter decimal number: ");
+scanf("%d", &num);
+while (num > 0) {
+bin[i] = num % 2;   
+num = num / 2;     
+i++;
+}
+printf("Binary: ");
+for (int j = i - 1; j >= 0; j--) {
+printf("%d", bin[j]);
+}
+return 0;
+}
